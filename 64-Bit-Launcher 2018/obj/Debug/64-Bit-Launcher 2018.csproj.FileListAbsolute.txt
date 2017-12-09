@@ -9,3 +9,14 @@ D:\Schule\Bekim\Skoda\64-Bit-Launcher 2018\64-Bit-Launcher 2018\obj\Debug\64-Bit
 D:\Schule\Bekim\Skoda\64-Bit-Launcher 2018\64-Bit-Launcher 2018\obj\Debug\64-Bit-Launcher 2018.exe
 D:\Schule\Bekim\Skoda\64-Bit-Launcher 2018\64-Bit-Launcher 2018\obj\Debug\64-Bit-Launcher 2018.pdb
 D:\Schule\Bekim\Skoda\64-Bit-Launcher 2018\64-Bit-Launcher 2018\bin\Debug\Bunifu_UI_v1.5.3.dll
+C:\Users\bekim\Desktop\Team_Projecte\64-Bit-Launcher-2018\64-Bit-Launcher 2018\bin\Debug\64-Bit-Launcher 2018.exe.config
+C:\Users\bekim\Desktop\Team_Projecte\64-Bit-Launcher-2018\64-Bit-Launcher 2018\bin\Debug\64-Bit-Launcher 2018.exe
+C:\Users\bekim\Desktop\Team_Projecte\64-Bit-Launcher-2018\64-Bit-Launcher 2018\bin\Debug\64-Bit-Launcher 2018.pdb
+C:\Users\bekim\Desktop\Team_Projecte\64-Bit-Launcher-2018\64-Bit-Launcher 2018\bin\Debug\Bunifu_UI_v1.5.3.dll
+C:\Users\bekim\Desktop\Team_Projecte\64-Bit-Launcher-2018\64-Bit-Launcher 2018\obj\Debug\64-Bit-Launcher 2018.csprojResolveAssemblyReference.cache
+C:\Users\bekim\Desktop\Team_Projecte\64-Bit-Launcher-2018\64-Bit-Launcher 2018\obj\Debug\_64_Bit_Launcher_2018.MainMenue.resources
+C:\Users\bekim\Desktop\Team_Projecte\64-Bit-Launcher-2018\64-Bit-Launcher 2018\obj\Debug\_64_Bit_Launcher_2018.Properties.Resources.resources
+C:\Users\bekim\Desktop\Team_Projecte\64-Bit-Launcher-2018\64-Bit-Launcher 2018\obj\Debug\64-Bit-Launcher 2018.csproj.GenerateResource.Cache
+C:\Users\bekim\Desktop\Team_Projecte\64-Bit-Launcher-2018\64-Bit-Launcher 2018\obj\Debug\64-Bit-Launcher 2018.csproj.CoreCompileInputs.cache
+C:\Users\bekim\Desktop\Team_Projecte\64-Bit-Launcher-2018\64-Bit-Launcher 2018\obj\Debug\64-Bit-Launcher 2018.exe
+C:\Users\bekim\Desktop\Team_Projecte\64-Bit-Launcher-2018\64-Bit-Launcher 2018\obj\Debug\64-Bit-Launcher 2018.pdb
