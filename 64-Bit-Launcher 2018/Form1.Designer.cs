@@ -30,29 +30,29 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
+            this.Abrunden = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
             this.TheSquareGame = new System.Windows.Forms.Label();
             this.TheSquareGame_Strich = new Bunifu.Framework.UI.BunifuSeparator();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.MinimizeBtn = new Bunifu.Framework.UI.BunifuImageButton();
             this.CloseBtn = new Bunifu.Framework.UI.BunifuImageButton();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.label1 = new System.Windows.Forms.Label();
+            this.panel3 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
-            this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.MinimizeBtn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CloseBtn)).BeginInit();
+            this.panel2.SuspendLayout();
+            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
-            // bunifuElipse1
+            // Abrunden
             // 
-            this.bunifuElipse1.ElipseRadius = 8;
-            this.bunifuElipse1.TargetControl = this;
+            this.Abrunden.ElipseRadius = 8;
+            this.Abrunden.TargetControl = this;
             // 
             // panel1
             // 
@@ -94,36 +94,6 @@
             this.TheSquareGame_Strich.Vertical = false;
             this.TheSquareGame_Strich.Visible = false;
             // 
-            // panel2
-            // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
-            this.panel2.Controls.Add(this.label1);
-            this.panel2.Location = new System.Drawing.Point(17, 65);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(300, 53);
-            this.panel2.TabIndex = 0;
-            // 
-            // label1
-            // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(77, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(153, 33);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Welcome !";
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
-            this.panel3.Controls.Add(this.label2);
-            this.panel3.Location = new System.Drawing.Point(17, 139);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(300, 428);
-            this.panel3.TabIndex = 1;
-            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::_64_Bit_Launcher_2018.Properties.Resources.InProgrammIcon;
@@ -162,6 +132,36 @@
             this.CloseBtn.Zoom = 10;
             this.CloseBtn.Click += new System.EventHandler(this.CloseBtn_Click);
             // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
+            this.panel2.Controls.Add(this.label1);
+            this.panel2.Location = new System.Drawing.Point(17, 65);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(300, 53);
+            this.panel2.TabIndex = 0;
+            // 
+            // label1
+            // 
+            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(77, 9);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(153, 33);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Welcome !";
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
+            this.panel3.Controls.Add(this.label2);
+            this.panel3.Location = new System.Drawing.Point(17, 139);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(300, 428);
+            this.panel3.TabIndex = 1;
+            // 
             // label2
             // 
             this.label2.Dock = System.Windows.Forms.DockStyle.Top;
@@ -191,18 +191,18 @@
             this.Text = "64-Bit-Launcher";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
-            this.panel3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.MinimizeBtn)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.CloseBtn)).EndInit();
+            this.panel2.ResumeLayout(false);
+            this.panel2.PerformLayout();
+            this.panel3.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
 
         #endregion
-        private Bunifu.Framework.UI.BunifuElipse bunifuElipse1;
+        private Bunifu.Framework.UI.BunifuElipse Abrunden;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private Bunifu.Framework.UI.BunifuImageButton MinimizeBtn;
