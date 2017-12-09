@@ -29,13 +29,8 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-<<<<<<< HEAD:64-Bit-Launcher 2018/Form1.Designer.cs
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
-            this.Abrunden = new Bunifu.Framework.UI.BunifuElipse(this.components);
-=======
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainMenue));
-            this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
->>>>>>> 6a886ae4310bd7eada024fb2f9ff45717afb1e9f:64-Bit-Launcher 2018/MainMenue.Designer.cs
+            this.Abrunden = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.panel1 = new System.Windows.Forms.Panel();
             this.TheSquareGame = new System.Windows.Forms.Label();
             this.TheSquareGame_Strich = new Bunifu.Framework.UI.BunifuSeparator();
@@ -46,6 +41,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
+            this.OurWebsite_LinkLbl = new System.Windows.Forms.LinkLabel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.MinimizeBtn)).BeginInit();
@@ -161,6 +157,7 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
+            this.panel3.Controls.Add(this.OurWebsite_LinkLbl);
             this.panel3.Controls.Add(this.label2);
             this.panel3.Location = new System.Drawing.Point(17, 139);
             this.panel3.Name = "panel3";
@@ -174,14 +171,25 @@
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(0, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(300, 98);
+            this.label2.Size = new System.Drawing.Size(300, 428);
             this.label2.TabIndex = 0;
-            this.label2.Text = "Welcome to 64-bit Penguin! \r\nHere on the 64-bit platform you can download and pla" +
-    "y our games.\r\n Look forward to great games made with love.\r\nBe ready and become " +
-    "a part of the Penguin community!";
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.label2.Text = resources.GetString("label2.Text");
+            this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // Form1
+            // OurWebsite_LinkLbl
+            // 
+            this.OurWebsite_LinkLbl.ActiveLinkColor = System.Drawing.Color.OrangeRed;
+            this.OurWebsite_LinkLbl.AutoSize = true;
+            this.OurWebsite_LinkLbl.LinkColor = System.Drawing.Color.White;
+            this.OurWebsite_LinkLbl.Location = new System.Drawing.Point(121, 143);
+            this.OurWebsite_LinkLbl.Name = "OurWebsite_LinkLbl";
+            this.OurWebsite_LinkLbl.Size = new System.Drawing.Size(56, 13);
+            this.OurWebsite_LinkLbl.TabIndex = 1;
+            this.OurWebsite_LinkLbl.TabStop = true;
+            this.OurWebsite_LinkLbl.Text = "Click Here";
+            this.OurWebsite_LinkLbl.VisitedLinkColor = System.Drawing.Color.White;
+            // 
+            // MainMenue
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -191,7 +199,7 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Name = "Form1";
+            this.Name = "MainMenue";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "64-Bit-Launcher";
             this.panel1.ResumeLayout(false);
@@ -202,6 +210,7 @@
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
+            this.panel3.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -218,6 +227,7 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.LinkLabel OurWebsite_LinkLbl;
     }
 }
 
