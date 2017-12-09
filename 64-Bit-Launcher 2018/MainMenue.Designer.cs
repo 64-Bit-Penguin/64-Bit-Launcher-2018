@@ -1,6 +1,6 @@
 ﻿namespace _64_Bit_Launcher_2018
 {
-    partial class Form1
+    partial class MainMenue
     {
         /// <summary>
         /// Erforderliche Designervariable.
@@ -29,8 +29,13 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+<<<<<<< HEAD:64-Bit-Launcher 2018/Form1.Designer.cs
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.Abrunden = new Bunifu.Framework.UI.BunifuElipse(this.components);
+=======
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainMenue));
+            this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
+>>>>>>> 6a886ae4310bd7eada024fb2f9ff45717afb1e9f:64-Bit-Launcher 2018/MainMenue.Designer.cs
             this.panel1 = new System.Windows.Forms.Panel();
             this.TheSquareGame = new System.Windows.Forms.Label();
             this.TheSquareGame_Strich = new Bunifu.Framework.UI.BunifuSeparator();
