@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace _64_Bit_Launcher_2018
 {
-    public partial class Form1 : Form
+    public partial class MainMenue : Form
     {
-        public Form1()
+        public MainMenue()
         {
             InitializeComponent();
         }
