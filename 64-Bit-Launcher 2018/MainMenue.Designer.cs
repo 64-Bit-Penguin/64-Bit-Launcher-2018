@@ -42,12 +42,16 @@
             this.panel3 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.OurWebsite_LinkLbl = new System.Windows.Forms.LinkLabel();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.panel5 = new System.Windows.Forms.Panel();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.MinimizeBtn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CloseBtn)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
+            this.panel5.SuspendLayout();
             this.SuspendLayout();
             // 
             // Abrunden
@@ -189,12 +193,43 @@
             this.OurWebsite_LinkLbl.Text = "Click Here";
             this.OurWebsite_LinkLbl.VisitedLinkColor = System.Drawing.Color.White;
             // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
+            this.panel4.Location = new System.Drawing.Point(343, 139);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(865, 427);
+            this.panel4.TabIndex = 2;
+            // 
+            // label3
+            // 
+            this.label3.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(0, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(865, 53);
+            this.label3.TabIndex = 1;
+            this.label3.Text = "Changelog";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
+            this.panel5.Controls.Add(this.label3);
+            this.panel5.Location = new System.Drawing.Point(343, 65);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(865, 53);
+            this.panel5.TabIndex = 1;
+            // 
             // MainMenue
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.ClientSize = new System.Drawing.Size(1245, 712);
+            this.Controls.Add(this.panel5);
+            this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
@@ -211,6 +246,7 @@
             this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            this.panel5.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -228,6 +264,9 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.LinkLabel OurWebsite_LinkLbl;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Panel panel5;
     }
 }
 
