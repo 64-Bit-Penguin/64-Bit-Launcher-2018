@@ -149,16 +149,6 @@ Be ready and become a part of the Penguin community!
 
 For news check our website </value>
   </data>
-  <data name="MinimizeBtn.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAABGdBTUEAALGPC/xhBQAAAPlJREFUaEPt
-        2jEKg0AUhGGPkCZNTmhyVEu7nMJCrZMdGEFkddeEwAx5P7zCDQvva8QiTRR93ziO13meWz56RkSf5pXm
-        zmOv0uK3aZqeRHTDMFz4k0+BUCkQv45Lvfi4mzQC1UDkEagEsUCgI4gNAu1BrBAoB7FDoC3EEoHWEFsE
-        WiDWCLRArBFogVgj0AZSNbyqVW7R0vBqFEXRv5V7JZaGV7XKLVoaXvUqLb7+APSEbBCdJWSLwAegHSSH
-        4LkPZA+BbCBHCGQBKSGQPKQGgaQhtQgkCzmDQJKQswgkB/kEIVcgVAqEUmn5BxE9/ibBY88SorVHRBI1
-        zRuy5qqZn/imNwAAAABJRU5ErkJggg==
-</value>
-  </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAABAAQAEBAAAAAAIABoBAAARgAAACAgAAAAACAAqBAAAK4EAAAwMAAAAAAgAKglAABWFQAAQEAAAAAA

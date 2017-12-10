@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Diagnostics;
+using System.Runtime.InteropServices;
 
 namespace _64_Bit_Launcher_2018
 {
@@ -17,6 +18,26 @@ namespace _64_Bit_Launcher_2018
         {
             InitializeComponent();
         }
+
+        #region Panel als Mover benutzen;
+        public const int WM_NCLBUTTONDOWN = 0xA1;
+        public const int HT_CAPTION = 0x2;
+
+        [DllImportAttribute("user32.dll")]
+        public static extern int SendMessage(IntPtr hWnd, int Msg, int wParam, int lParam);
+        [DllImportAttribute("user32.dll")]
+        public static extern bool ReleaseCapture();
+
+        public static void Move_Panel(IntPtr Handle, MouseEventArgs e)
+        {
+            if (e.Button == MouseButtons.Left)
+            {
+                ReleaseCapture();
+                SendMessage(Handle, WM_NCLBUTTONDOWN, HT_CAPTION, 0);
+            }
+        }
+        //"Move_Panel(Handle, e);"   in   "panel1_MouseMove" schreiben "using System.Runtime.InteropServices;"
+        #endregion
 
         private void CloseBtn_Click(object sender, EventArgs e)
         {
@@ -90,6 +111,17 @@ namespace _64_Bit_Launcher_2018
             System.Threading.Thread.Sleep(1000);
 
             this.Invoke(web);
+        }
+
+        private void Navigation_panel_MouseMove(object sender, MouseEventArgs e)
+        {
+            Move_Panel(Handle, e);
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            LoginSystem login = new LoginSystem();
+            login.Show();
         }
     }
 }
