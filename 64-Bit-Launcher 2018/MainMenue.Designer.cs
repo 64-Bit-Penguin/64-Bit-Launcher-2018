@@ -40,8 +40,8 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.label2 = new System.Windows.Forms.Label();
             this.OurWebsite_LinkLbl = new System.Windows.Forms.LinkLabel();
+            this.label2 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.MinimizeBtn)).BeginInit();
@@ -164,6 +164,20 @@
             this.panel3.Size = new System.Drawing.Size(300, 428);
             this.panel3.TabIndex = 1;
             // 
+            // OurWebsite_LinkLbl
+            // 
+            this.OurWebsite_LinkLbl.ActiveLinkColor = System.Drawing.Color.OrangeRed;
+            this.OurWebsite_LinkLbl.Dock = System.Windows.Forms.DockStyle.Top;
+            this.OurWebsite_LinkLbl.LinkColor = System.Drawing.Color.White;
+            this.OurWebsite_LinkLbl.Location = new System.Drawing.Point(0, 143);
+            this.OurWebsite_LinkLbl.Name = "OurWebsite_LinkLbl";
+            this.OurWebsite_LinkLbl.Size = new System.Drawing.Size(300, 13);
+            this.OurWebsite_LinkLbl.TabIndex = 1;
+            this.OurWebsite_LinkLbl.TabStop = true;
+            this.OurWebsite_LinkLbl.Text = "Click Here";
+            this.OurWebsite_LinkLbl.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.OurWebsite_LinkLbl.VisitedLinkColor = System.Drawing.Color.White;
+            // 
             // label2
             // 
             this.label2.Dock = System.Windows.Forms.DockStyle.Top;
@@ -171,23 +185,10 @@
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(0, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(300, 428);
+            this.label2.Size = new System.Drawing.Size(300, 143);
             this.label2.TabIndex = 0;
             this.label2.Text = resources.GetString("label2.Text");
             this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
-            // 
-            // OurWebsite_LinkLbl
-            // 
-            this.OurWebsite_LinkLbl.ActiveLinkColor = System.Drawing.Color.OrangeRed;
-            this.OurWebsite_LinkLbl.AutoSize = true;
-            this.OurWebsite_LinkLbl.LinkColor = System.Drawing.Color.White;
-            this.OurWebsite_LinkLbl.Location = new System.Drawing.Point(121, 143);
-            this.OurWebsite_LinkLbl.Name = "OurWebsite_LinkLbl";
-            this.OurWebsite_LinkLbl.Size = new System.Drawing.Size(56, 13);
-            this.OurWebsite_LinkLbl.TabIndex = 1;
-            this.OurWebsite_LinkLbl.TabStop = true;
-            this.OurWebsite_LinkLbl.Text = "Click Here";
-            this.OurWebsite_LinkLbl.VisitedLinkColor = System.Drawing.Color.White;
             // 
             // MainMenue
             // 
@@ -210,7 +211,6 @@
             this.panel2.ResumeLayout(false);
             this.panel2.PerformLayout();
             this.panel3.ResumeLayout(false);
-            this.panel3.PerformLayout();
             this.ResumeLayout(false);
 
         }
