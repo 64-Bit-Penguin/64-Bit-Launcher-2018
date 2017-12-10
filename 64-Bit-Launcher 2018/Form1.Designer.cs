@@ -169,11 +169,9 @@
             this.label2.ForeColor = System.Drawing.Color.White;
             this.label2.Location = new System.Drawing.Point(0, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(300, 98);
+            this.label2.Size = new System.Drawing.Size(300, 168);
             this.label2.TabIndex = 0;
-            this.label2.Text = "Welcome to 64-bit Penguin! \r\nHere on the 64-bit platform you can download and pla" +
-    "y our games.\r\n Look forward to great games made with love.\r\nBe ready and become " +
-    "a part of the Penguin community!";
+            this.label2.Text = resources.GetString("label2.Text");
             this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // Form1

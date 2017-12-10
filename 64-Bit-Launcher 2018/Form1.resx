@@ -123,6 +123,13 @@
   <metadata name="$this.TrayHeight" type="System.Int32, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>47</value>
   </metadata>
+  <data name="label2.Text" xml:space="preserve">
+    <value>Welcome to 64-bit Penguin! 
+Here on the 64-bit platform you can download and play our games.
+ Look forward to great games made with love.
+Be ready and become a part of the Penguin community!
+Muschi Ficki</value>
+  </data>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
   <data name="MinimizeBtn.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
