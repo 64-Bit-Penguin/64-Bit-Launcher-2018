@@ -20,3 +20,12 @@ C:\Users\bekim\Desktop\Team_Projecte\64-Bit-Launcher-2018\64-Bit-Launcher 2018\o
 C:\Users\bekim\Desktop\Team_Projecte\64-Bit-Launcher-2018\64-Bit-Launcher 2018\obj\Debug\64-Bit-Launcher 2018.csproj.CoreCompileInputs.cache
 C:\Users\bekim\Desktop\Team_Projecte\64-Bit-Launcher-2018\64-Bit-Launcher 2018\obj\Debug\64-Bit-Launcher 2018.exe
 C:\Users\bekim\Desktop\Team_Projecte\64-Bit-Launcher-2018\64-Bit-Launcher 2018\obj\Debug\64-Bit-Launcher 2018.pdb
+F:\Programme\gitkraken\projects\64-Bit-Launcher-2018\64-Bit-Launcher 2018\bin\Debug\64-Bit-Launcher 2018.exe.config
+F:\Programme\gitkraken\projects\64-Bit-Launcher-2018\64-Bit-Launcher 2018\bin\Debug\64-Bit-Launcher 2018.exe
+F:\Programme\gitkraken\projects\64-Bit-Launcher-2018\64-Bit-Launcher 2018\bin\Debug\64-Bit-Launcher 2018.pdb
+F:\Programme\gitkraken\projects\64-Bit-Launcher-2018\64-Bit-Launcher 2018\obj\Debug\64-Bit-Launcher 2018.csprojResolveAssemblyReference.cache
+F:\Programme\gitkraken\projects\64-Bit-Launcher-2018\64-Bit-Launcher 2018\obj\Debug\_64_Bit_Launcher_2018.MainMenue.resources
+F:\Programme\gitkraken\projects\64-Bit-Launcher-2018\64-Bit-Launcher 2018\obj\Debug\_64_Bit_Launcher_2018.Properties.Resources.resources
+F:\Programme\gitkraken\projects\64-Bit-Launcher-2018\64-Bit-Launcher 2018\obj\Debug\64-Bit-Launcher 2018.csproj.GenerateResource.Cache
+F:\Programme\gitkraken\projects\64-Bit-Launcher-2018\64-Bit-Launcher 2018\obj\Debug\64-Bit-Launcher 2018.exe
+F:\Programme\gitkraken\projects\64-Bit-Launcher-2018\64-Bit-Launcher 2018\obj\Debug\64-Bit-Launcher 2018.pdb
