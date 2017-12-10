@@ -34,19 +34,31 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.TheSquareGame = new System.Windows.Forms.Label();
             this.TheSquareGame_Strich = new Bunifu.Framework.UI.BunifuSeparator();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.MinimizeBtn = new Bunifu.Framework.UI.BunifuImageButton();
-            this.CloseBtn = new Bunifu.Framework.UI.BunifuImageButton();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.OurWebsite_LinkLbl = new System.Windows.Forms.LinkLabel();
             this.label2 = new System.Windows.Forms.Label();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.label3 = new System.Windows.Forms.Label();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.Youtube = new Bunifu.Framework.UI.BunifuImageButton();
+            this.Facebook = new Bunifu.Framework.UI.BunifuImageButton();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.MinimizeBtn = new Bunifu.Framework.UI.BunifuImageButton();
+            this.CloseBtn = new Bunifu.Framework.UI.BunifuImageButton();
+            this.webBrowser1 = new System.Windows.Forms.WebBrowser();
+            this.WebSite = new System.ComponentModel.BackgroundWorker();
             this.panel1.SuspendLayout();
+            this.panel2.SuspendLayout();
+            this.panel3.SuspendLayout();
+            this.panel4.SuspendLayout();
+            this.panel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.Youtube)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Facebook)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.MinimizeBtn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CloseBtn)).BeginInit();
-            this.panel2.SuspendLayout();
-            this.panel3.SuspendLayout();
             this.SuspendLayout();
             // 
             // Abrunden
@@ -94,6 +106,121 @@
             this.TheSquareGame_Strich.Vertical = false;
             this.TheSquareGame_Strich.Visible = false;
             // 
+            // panel2
+            // 
+            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
+            this.panel2.Controls.Add(this.label1);
+            this.panel2.Location = new System.Drawing.Point(17, 65);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(300, 53);
+            this.panel2.TabIndex = 0;
+            // 
+            // label1
+            // 
+            this.label1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.White;
+            this.label1.Location = new System.Drawing.Point(0, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(300, 53);
+            this.label1.TabIndex = 0;
+            this.label1.Text = "Welcome";
+            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panel3
+            // 
+            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
+            this.panel3.Controls.Add(this.OurWebsite_LinkLbl);
+            this.panel3.Controls.Add(this.label2);
+            this.panel3.Location = new System.Drawing.Point(17, 139);
+            this.panel3.Name = "panel3";
+            this.panel3.Size = new System.Drawing.Size(300, 428);
+            this.panel3.TabIndex = 1;
+            // 
+            // OurWebsite_LinkLbl
+            // 
+            this.OurWebsite_LinkLbl.ActiveLinkColor = System.Drawing.Color.OrangeRed;
+            this.OurWebsite_LinkLbl.Dock = System.Windows.Forms.DockStyle.Top;
+            this.OurWebsite_LinkLbl.LinkColor = System.Drawing.Color.White;
+            this.OurWebsite_LinkLbl.Location = new System.Drawing.Point(0, 146);
+            this.OurWebsite_LinkLbl.Name = "OurWebsite_LinkLbl";
+            this.OurWebsite_LinkLbl.Size = new System.Drawing.Size(300, 17);
+            this.OurWebsite_LinkLbl.TabIndex = 1;
+            this.OurWebsite_LinkLbl.TabStop = true;
+            this.OurWebsite_LinkLbl.Text = "Click Here";
+            this.OurWebsite_LinkLbl.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            this.OurWebsite_LinkLbl.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.OurWebsite_LinkLbl_LinkClicked);
+            // 
+            // label2
+            // 
+            this.label2.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.White;
+            this.label2.Location = new System.Drawing.Point(0, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(300, 146);
+            this.label2.TabIndex = 0;
+            this.label2.Text = resources.GetString("label2.Text");
+            this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
+            this.panel4.Controls.Add(this.label3);
+            this.panel4.Location = new System.Drawing.Point(342, 65);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(882, 53);
+            this.panel4.TabIndex = 1;
+            // 
+            // label3
+            // 
+            this.label3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.White;
+            this.label3.Location = new System.Drawing.Point(0, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(882, 53);
+            this.label3.TabIndex = 1;
+            this.label3.Text = "Changelog";
+            this.label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panel5
+            // 
+            this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
+            this.panel5.Controls.Add(this.webBrowser1);
+            this.panel5.Location = new System.Drawing.Point(342, 139);
+            this.panel5.Name = "panel5";
+            this.panel5.Size = new System.Drawing.Size(882, 427);
+            this.panel5.TabIndex = 2;
+            // 
+            // Youtube
+            // 
+            this.Youtube.BackColor = System.Drawing.Color.Transparent;
+            this.Youtube.Image = global::_64_Bit_Launcher_2018.Properties.Resources.youtube;
+            this.Youtube.ImageActive = null;
+            this.Youtube.Location = new System.Drawing.Point(61, 655);
+            this.Youtube.Name = "Youtube";
+            this.Youtube.Size = new System.Drawing.Size(56, 47);
+            this.Youtube.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Youtube.TabIndex = 3;
+            this.Youtube.TabStop = false;
+            this.Youtube.Zoom = 10;
+            this.Youtube.Click += new System.EventHandler(this.Youtube_Click);
+            // 
+            // Facebook
+            // 
+            this.Facebook.BackColor = System.Drawing.Color.Transparent;
+            this.Facebook.Image = ((System.Drawing.Image)(resources.GetObject("Facebook.Image")));
+            this.Facebook.ImageActive = null;
+            this.Facebook.Location = new System.Drawing.Point(12, 657);
+            this.Facebook.Name = "Facebook";
+            this.Facebook.Size = new System.Drawing.Size(45, 43);
+            this.Facebook.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.Facebook.TabIndex = 0;
+            this.Facebook.TabStop = false;
+            this.Facebook.Zoom = 10;
+            this.Facebook.Click += new System.EventHandler(this.Facebook_Click);
+            // 
             // pictureBox1
             // 
             this.pictureBox1.Image = global::_64_Bit_Launcher_2018.Properties.Resources.InProgrammIcon;
@@ -132,47 +259,23 @@
             this.CloseBtn.Zoom = 10;
             this.CloseBtn.Click += new System.EventHandler(this.CloseBtn_Click);
             // 
-            // panel2
+            // webBrowser1
             // 
-            this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
-            this.panel2.Controls.Add(this.label1);
-            this.panel2.Location = new System.Drawing.Point(17, 65);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(300, 53);
-            this.panel2.TabIndex = 0;
+            this.webBrowser1.Location = new System.Drawing.Point(13, 13);
+            this.webBrowser1.MinimumSize = new System.Drawing.Size(20, 20);
+            this.webBrowser1.Name = "webBrowser1";
+            this.webBrowser1.ScriptErrorsSuppressed = true;
+            this.webBrowser1.ScrollBarsEnabled = false;
+            this.webBrowser1.Size = new System.Drawing.Size(852, 402);
+            this.webBrowser1.TabIndex = 4;
+            this.webBrowser1.Url = new System.Uri("", System.UriKind.Relative);
+            this.webBrowser1.Visible = false;
+            this.webBrowser1.DocumentCompleted += new System.Windows.Forms.WebBrowserDocumentCompletedEventHandler(this.webBrowser1_DocumentCompleted);
             // 
-            // label1
+            // WebSite
             // 
-            this.label1.Anchor = System.Windows.Forms.AnchorStyles.Top;
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(77, 9);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(153, 33);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Welcome !";
-            // 
-            // panel3
-            // 
-            this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
-            this.panel3.Controls.Add(this.label2);
-            this.panel3.Location = new System.Drawing.Point(17, 139);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(300, 428);
-            this.panel3.TabIndex = 1;
-            // 
-            // label2
-            // 
-            this.label2.Dock = System.Windows.Forms.DockStyle.Top;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.White;
-            this.label2.Location = new System.Drawing.Point(0, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(300, 168);
-            this.label2.TabIndex = 0;
-            this.label2.Text = resources.GetString("label2.Text");
-            this.label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.WebSite.WorkerSupportsCancellation = true;
+            this.WebSite.DoWork += new System.ComponentModel.DoWorkEventHandler(this.WebSite_DoWork);
             // 
             // Form1
             // 
@@ -180,21 +283,30 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.ClientSize = new System.Drawing.Size(1245, 712);
+            this.Controls.Add(this.Youtube);
+            this.Controls.Add(this.Facebook);
+            this.Controls.Add(this.panel5);
+            this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "64-Bit-Launcher";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.panel2.ResumeLayout(false);
+            this.panel3.ResumeLayout(false);
+            this.panel4.ResumeLayout(false);
+            this.panel5.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.Youtube)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Facebook)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.MinimizeBtn)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.CloseBtn)).EndInit();
-            this.panel2.ResumeLayout(false);
-            this.panel2.PerformLayout();
-            this.panel3.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -211,6 +323,14 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Panel panel5;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.LinkLabel OurWebsite_LinkLbl;
+        private Bunifu.Framework.UI.BunifuImageButton Facebook;
+        private Bunifu.Framework.UI.BunifuImageButton Youtube;
+        private System.Windows.Forms.WebBrowser webBrowser1;
+        private System.ComponentModel.BackgroundWorker WebSite;
     }
 }
 

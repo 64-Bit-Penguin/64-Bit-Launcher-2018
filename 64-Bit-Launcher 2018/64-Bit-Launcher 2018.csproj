@@ -103,6 +103,11 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="64-Bit-Launcher-Icon.ico" />
+    <None Include="Resources\youtube2.png" />
+    <None Include="Resources\youtube1.png" />
+    <None Include="Resources\youtube.png" />
+    <None Include="Resources\facebook1.png" />
+    <None Include="Resources\facebook.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
