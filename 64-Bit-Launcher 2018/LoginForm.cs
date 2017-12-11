@@ -20,6 +20,8 @@ namespace _64_Bit_Launcher_2018
     {
         public string user;
         public string pass;
+        public string rpass;
+        public string email;
         public LoginForm()
         {
             connection.MeinSQL.Connect();
@@ -138,11 +140,9 @@ namespace _64_Bit_Launcher_2018
             
         }
 
-
-
-        private void LoginSystem_Load(object sender, EventArgs e)
+        private void RegisterBtn_Click(object sender, EventArgs e)
         {
-
+            connection.MeinSQL.register(Username_Regi, Password_Regi, Repassword_Regi, Email_Regi, user, pass, rpass, email);
         }
     }
 }

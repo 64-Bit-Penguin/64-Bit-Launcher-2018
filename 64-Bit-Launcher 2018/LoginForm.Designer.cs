@@ -43,7 +43,7 @@
             this.Email_Regi = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.Repassword_Regi = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.Password_Regi = new Bunifu.Framework.UI.BunifuMaterialTextbox();
-            this.bunifuFlatButton2 = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.RegisterBtn = new Bunifu.Framework.UI.BunifuFlatButton();
             this.Username_Regi = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.label2 = new System.Windows.Forms.Label();
             this.Navigation_panel.SuspendLayout();
@@ -239,7 +239,7 @@
             this.panel2.Controls.Add(this.Email_Regi);
             this.panel2.Controls.Add(this.Repassword_Regi);
             this.panel2.Controls.Add(this.Password_Regi);
-            this.panel2.Controls.Add(this.bunifuFlatButton2);
+            this.panel2.Controls.Add(this.RegisterBtn);
             this.panel2.Controls.Add(this.Username_Regi);
             this.panel2.Controls.Add(this.label2);
             this.panel2.Location = new System.Drawing.Point(644, 88);
@@ -313,40 +313,41 @@
             this.Password_Regi.Enter += new System.EventHandler(this.Password_Regi_Enter);
             this.Password_Regi.Leave += new System.EventHandler(this.Password_Regi_Leave);
             // 
-            // bunifuFlatButton2
+            // RegisterBtn
             // 
-            this.bunifuFlatButton2.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(163)))), ((int)(((byte)(9)))));
-            this.bunifuFlatButton2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(163)))), ((int)(((byte)(9)))));
-            this.bunifuFlatButton2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.bunifuFlatButton2.BorderRadius = 0;
-            this.bunifuFlatButton2.ButtonText = "Register";
-            this.bunifuFlatButton2.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.bunifuFlatButton2.DisabledColor = System.Drawing.Color.Gray;
-            this.bunifuFlatButton2.ForeColor = System.Drawing.Color.White;
-            this.bunifuFlatButton2.Iconcolor = System.Drawing.Color.Transparent;
-            this.bunifuFlatButton2.Iconimage = null;
-            this.bunifuFlatButton2.Iconimage_right = null;
-            this.bunifuFlatButton2.Iconimage_right_Selected = null;
-            this.bunifuFlatButton2.Iconimage_Selected = null;
-            this.bunifuFlatButton2.IconMarginLeft = 0;
-            this.bunifuFlatButton2.IconMarginRight = 0;
-            this.bunifuFlatButton2.IconRightVisible = true;
-            this.bunifuFlatButton2.IconRightZoom = 0D;
-            this.bunifuFlatButton2.IconVisible = true;
-            this.bunifuFlatButton2.IconZoom = 90D;
-            this.bunifuFlatButton2.IsTab = false;
-            this.bunifuFlatButton2.Location = new System.Drawing.Point(62, 457);
-            this.bunifuFlatButton2.Name = "bunifuFlatButton2";
-            this.bunifuFlatButton2.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(163)))), ((int)(((byte)(9)))));
-            this.bunifuFlatButton2.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(186)))), ((int)(((byte)(31)))));
-            this.bunifuFlatButton2.OnHoverTextColor = System.Drawing.Color.Black;
-            this.bunifuFlatButton2.selected = false;
-            this.bunifuFlatButton2.Size = new System.Drawing.Size(250, 57);
-            this.bunifuFlatButton2.TabIndex = 7;
-            this.bunifuFlatButton2.Text = "Register";
-            this.bunifuFlatButton2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            this.bunifuFlatButton2.Textcolor = System.Drawing.Color.Black;
-            this.bunifuFlatButton2.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RegisterBtn.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(163)))), ((int)(((byte)(9)))));
+            this.RegisterBtn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(163)))), ((int)(((byte)(9)))));
+            this.RegisterBtn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.RegisterBtn.BorderRadius = 0;
+            this.RegisterBtn.ButtonText = "Register";
+            this.RegisterBtn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.RegisterBtn.DisabledColor = System.Drawing.Color.Gray;
+            this.RegisterBtn.ForeColor = System.Drawing.Color.White;
+            this.RegisterBtn.Iconcolor = System.Drawing.Color.Transparent;
+            this.RegisterBtn.Iconimage = null;
+            this.RegisterBtn.Iconimage_right = null;
+            this.RegisterBtn.Iconimage_right_Selected = null;
+            this.RegisterBtn.Iconimage_Selected = null;
+            this.RegisterBtn.IconMarginLeft = 0;
+            this.RegisterBtn.IconMarginRight = 0;
+            this.RegisterBtn.IconRightVisible = true;
+            this.RegisterBtn.IconRightZoom = 0D;
+            this.RegisterBtn.IconVisible = true;
+            this.RegisterBtn.IconZoom = 90D;
+            this.RegisterBtn.IsTab = false;
+            this.RegisterBtn.Location = new System.Drawing.Point(62, 457);
+            this.RegisterBtn.Name = "RegisterBtn";
+            this.RegisterBtn.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(163)))), ((int)(((byte)(9)))));
+            this.RegisterBtn.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(186)))), ((int)(((byte)(31)))));
+            this.RegisterBtn.OnHoverTextColor = System.Drawing.Color.Black;
+            this.RegisterBtn.selected = false;
+            this.RegisterBtn.Size = new System.Drawing.Size(250, 57);
+            this.RegisterBtn.TabIndex = 7;
+            this.RegisterBtn.Text = "Register";
+            this.RegisterBtn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.RegisterBtn.Textcolor = System.Drawing.Color.Black;
+            this.RegisterBtn.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.RegisterBtn.Click += new System.EventHandler(this.RegisterBtn_Click);
             // 
             // Username_Regi
             // 
@@ -395,7 +396,6 @@
             this.Name = "LoginForm";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "LoginSystem";
-            this.Load += new System.EventHandler(this.LoginSystem_Load);
             this.Navigation_panel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.MinimizeBtn)).EndInit();
@@ -426,7 +426,7 @@
         private Bunifu.Framework.UI.BunifuMaterialTextbox Email_Regi;
         private Bunifu.Framework.UI.BunifuMaterialTextbox Repassword_Regi;
         private Bunifu.Framework.UI.BunifuMaterialTextbox Password_Regi;
-        private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton2;
+        private Bunifu.Framework.UI.BunifuFlatButton RegisterBtn;
         private Bunifu.Framework.UI.BunifuMaterialTextbox Username_Regi;
     }
 }
