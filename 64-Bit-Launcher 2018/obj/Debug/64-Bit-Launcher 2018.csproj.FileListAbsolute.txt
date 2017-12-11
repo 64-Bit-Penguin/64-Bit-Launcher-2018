@@ -29,6 +29,11 @@ C:\Users\bekim\Desktop\Team_Projecte\64-Bit-Launcher-2018\64-Bit-Launcher 2018\o
 C:\Users\bekim\Desktop\Team_Projecte\64-Bit-Launcher-2018\64-Bit-Launcher 2018\obj\Debug\64-Bit-Launcher 2018.csproj.CoreCompileInputs.cache
 C:\Users\bekim\Desktop\Team_Projecte\64-Bit-Launcher-2018\64-Bit-Launcher 2018\obj\Debug\64-Bit-Launcher 2018.exe
 C:\Users\bekim\Desktop\Team_Projecte\64-Bit-Launcher-2018\64-Bit-Launcher 2018\obj\Debug\64-Bit-Launcher 2018.pdb
-C:\Users\bekim\Desktop\Team_Projecte\64-Bit-Launcher-2018\64-Bit-Launcher 2018\obj\Debug\_64_Bit_Launcher_2018.LoginSystem.resources
 C:\Users\bekim\Desktop\Team_Projecte\64-Bit-Launcher-2018\64-Bit-Launcher 2018\bin\Debug\platzhalter.dll
 C:\Users\bekim\Desktop\Team_Projecte\64-Bit-Launcher-2018\64-Bit-Launcher 2018\bin\Debug\platzhalter.pdb
+C:\Users\bekim\Desktop\Team_Projecte\64-Bit-Launcher-2018\64-Bit-Launcher 2018\bin\Debug\connection.dll
+C:\Users\bekim\Desktop\Team_Projecte\64-Bit-Launcher-2018\64-Bit-Launcher 2018\bin\Debug\HazardEdit.Tools.dll
+C:\Users\bekim\Desktop\Team_Projecte\64-Bit-Launcher-2018\64-Bit-Launcher 2018\bin\Debug\MySql.Data.dll
+C:\Users\bekim\Desktop\Team_Projecte\64-Bit-Launcher-2018\64-Bit-Launcher 2018\bin\Debug\connection.pdb
+C:\Users\bekim\Desktop\Team_Projecte\64-Bit-Launcher-2018\64-Bit-Launcher 2018\bin\Debug\MySql.Data.xml
+C:\Users\bekim\Desktop\Team_Projecte\64-Bit-Launcher-2018\64-Bit-Launcher 2018\obj\Debug\_64_Bit_Launcher_2018.LoginForm.resources

@@ -34,6 +34,9 @@
             this.Navigation_panel = new System.Windows.Forms.Panel();
             this.TheSquareGame = new System.Windows.Forms.Label();
             this.TheSquareGame_Strich = new Bunifu.Framework.UI.BunifuSeparator();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.MinimizeBtn = new Bunifu.Framework.UI.BunifuImageButton();
+            this.CloseBtn = new Bunifu.Framework.UI.BunifuImageButton();
             this.panel2 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
@@ -43,23 +46,20 @@
             this.label3 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
             this.webBrowser1 = new System.Windows.Forms.WebBrowser();
-            this.WebSite = new System.ComponentModel.BackgroundWorker();
             this.Youtube = new Bunifu.Framework.UI.BunifuImageButton();
             this.Facebook = new Bunifu.Framework.UI.BunifuImageButton();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.MinimizeBtn = new Bunifu.Framework.UI.BunifuImageButton();
-            this.CloseBtn = new Bunifu.Framework.UI.BunifuImageButton();
             this.button1 = new System.Windows.Forms.Button();
+            this.WebSite = new System.Windows.Forms.Timer(this.components);
             this.Navigation_panel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MinimizeBtn)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CloseBtn)).BeginInit();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Youtube)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Facebook)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.MinimizeBtn)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.CloseBtn)).BeginInit();
             this.SuspendLayout();
             // 
             // Abrunden
@@ -107,6 +107,44 @@
             this.TheSquareGame_Strich.Transparency = 255;
             this.TheSquareGame_Strich.Vertical = false;
             this.TheSquareGame_Strich.Visible = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::_64_Bit_Launcher_2018.Properties.Resources.InProgrammIcon;
+            this.pictureBox1.Location = new System.Drawing.Point(6, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(47, 41);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
+            // 
+            // MinimizeBtn
+            // 
+            this.MinimizeBtn.BackColor = System.Drawing.Color.Transparent;
+            this.MinimizeBtn.Image = global::_64_Bit_Launcher_2018.Properties.Resources.minimize;
+            this.MinimizeBtn.ImageActive = null;
+            this.MinimizeBtn.Location = new System.Drawing.Point(1187, 5);
+            this.MinimizeBtn.Name = "MinimizeBtn";
+            this.MinimizeBtn.Size = new System.Drawing.Size(22, 23);
+            this.MinimizeBtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.MinimizeBtn.TabIndex = 1;
+            this.MinimizeBtn.TabStop = false;
+            this.MinimizeBtn.Zoom = 10;
+            this.MinimizeBtn.Click += new System.EventHandler(this.MinimizeBtn_Click);
+            // 
+            // CloseBtn
+            // 
+            this.CloseBtn.BackColor = System.Drawing.Color.Transparent;
+            this.CloseBtn.Image = global::_64_Bit_Launcher_2018.Properties.Resources.close;
+            this.CloseBtn.ImageActive = null;
+            this.CloseBtn.Location = new System.Drawing.Point(1215, 3);
+            this.CloseBtn.Name = "CloseBtn";
+            this.CloseBtn.Size = new System.Drawing.Size(27, 25);
+            this.CloseBtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.CloseBtn.TabIndex = 1;
+            this.CloseBtn.TabStop = false;
+            this.CloseBtn.Zoom = 10;
+            this.CloseBtn.Click += new System.EventHandler(this.CloseBtn_Click);
             // 
             // panel2
             // 
@@ -208,11 +246,6 @@
             this.webBrowser1.Visible = false;
             this.webBrowser1.DocumentCompleted += new System.Windows.Forms.WebBrowserDocumentCompletedEventHandler(this.webBrowser1_DocumentCompleted);
             // 
-            // WebSite
-            // 
-            this.WebSite.WorkerSupportsCancellation = true;
-            this.WebSite.DoWork += new System.ComponentModel.DoWorkEventHandler(this.WebSite_DoWork);
-            // 
             // Youtube
             // 
             this.Youtube.BackColor = System.Drawing.Color.Transparent;
@@ -241,44 +274,6 @@
             this.Facebook.Zoom = 10;
             this.Facebook.Click += new System.EventHandler(this.Facebook_Click);
             // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::_64_Bit_Launcher_2018.Properties.Resources.InProgrammIcon;
-            this.pictureBox1.Location = new System.Drawing.Point(6, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(47, 41);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
-            // 
-            // MinimizeBtn
-            // 
-            this.MinimizeBtn.BackColor = System.Drawing.Color.Transparent;
-            this.MinimizeBtn.Image = global::_64_Bit_Launcher_2018.Properties.Resources.minimize;
-            this.MinimizeBtn.ImageActive = null;
-            this.MinimizeBtn.Location = new System.Drawing.Point(1187, 5);
-            this.MinimizeBtn.Name = "MinimizeBtn";
-            this.MinimizeBtn.Size = new System.Drawing.Size(22, 23);
-            this.MinimizeBtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.MinimizeBtn.TabIndex = 1;
-            this.MinimizeBtn.TabStop = false;
-            this.MinimizeBtn.Zoom = 10;
-            this.MinimizeBtn.Click += new System.EventHandler(this.MinimizeBtn_Click);
-            // 
-            // CloseBtn
-            // 
-            this.CloseBtn.BackColor = System.Drawing.Color.Transparent;
-            this.CloseBtn.Image = global::_64_Bit_Launcher_2018.Properties.Resources.close;
-            this.CloseBtn.ImageActive = null;
-            this.CloseBtn.Location = new System.Drawing.Point(1215, 3);
-            this.CloseBtn.Name = "CloseBtn";
-            this.CloseBtn.Size = new System.Drawing.Size(27, 25);
-            this.CloseBtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.CloseBtn.TabIndex = 1;
-            this.CloseBtn.TabStop = false;
-            this.CloseBtn.Zoom = 10;
-            this.CloseBtn.Click += new System.EventHandler(this.CloseBtn_Click);
-            // 
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(358, 597);
@@ -288,6 +283,11 @@
             this.button1.Text = "button1";
             this.button1.UseVisualStyleBackColor = true;
             this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // WebSite
+            // 
+            this.WebSite.Interval = 1000;
+            this.WebSite.Tick += new System.EventHandler(this.WebSite_Tick);
             // 
             // Form1
             // 
@@ -311,15 +311,15 @@
             this.Load += new System.EventHandler(this.Form1_Load);
             this.Navigation_panel.ResumeLayout(false);
             this.Navigation_panel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.MinimizeBtn)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.CloseBtn)).EndInit();
             this.panel2.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.Youtube)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Facebook)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.MinimizeBtn)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.CloseBtn)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -343,8 +343,8 @@
         private Bunifu.Framework.UI.BunifuImageButton Facebook;
         private Bunifu.Framework.UI.BunifuImageButton Youtube;
         private System.Windows.Forms.WebBrowser webBrowser1;
-        private System.ComponentModel.BackgroundWorker WebSite;
         private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Timer WebSite;
     }
 }
 

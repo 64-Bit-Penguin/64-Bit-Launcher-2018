@@ -88,31 +88,6 @@ namespace _64_Bit_Launcher_2018
             
         }
 
-        private void webBrowser1_DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e)
-        {
-            if (WebSite.IsBusy == false)
-            {
-                WebSite.RunWorkerAsync();
-            }
-        }
-
-        delegate void Website();
-
-        private void ShowWebBrowser()
-        {
-            webBrowser1.Show();
-        }
-
-
-        private void WebSite_DoWork(object sender, DoWorkEventArgs e)
-        {
-            Website web = new Website(ShowWebBrowser);
-
-            System.Threading.Thread.Sleep(1000);
-
-            this.Invoke(web);
-        }
-
         private void Navigation_panel_MouseMove(object sender, MouseEventArgs e)
         {
             Move_Panel(Handle, e);
@@ -120,8 +95,20 @@ namespace _64_Bit_Launcher_2018
 
         private void button1_Click(object sender, EventArgs e)
         {
-            LoginSystem login = new LoginSystem();
+            LoginForm login = new LoginForm();
             login.Show();
+
+        }
+
+        private void webBrowser1_DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e)
+        {
+            WebSite.Start();
+        }
+
+        private void WebSite_Tick(object sender, EventArgs e)
+        {
+            webBrowser1.Show();
+            WebSite.Stop();
         }
     }
 }

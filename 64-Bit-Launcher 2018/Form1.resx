@@ -140,15 +140,6 @@
         rkJggg==
 </value>
   </data>
-  <data name="label2.Text" xml:space="preserve">
-    <value>Welcome to 64-bit Penguin! 
-Here on the 64-bit platform you can download and play our games.
- Look forward to great games made with love.
-Be ready and become a part of the Penguin community!
-
-
-For news check our website </value>
-  </data>
   <data name="$this.Icon" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         AAABAAQAEBAAAAAAIABoBAAARgAAACAgAAAAACAAqBAAAK4EAAAwMAAAAAAgAKglAABWFQAAQEAAAAAA
@@ -686,6 +677,15 @@ For news check our website </value>
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA
         AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==
 </value>
+  </data>
+  <data name="label2.Text" xml:space="preserve">
+    <value>Welcome to 64-bit Penguin! 
+Here on the 64-bit platform you can download and play our games.
+ Look forward to great games made with love.
+Be ready and become a part of the Penguin community!
+
+
+For news check our website </value>
   </data>
   <metadata name="WebSite.TrayLocation" type="System.Drawing.Point, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a">
     <value>123, 17</value>

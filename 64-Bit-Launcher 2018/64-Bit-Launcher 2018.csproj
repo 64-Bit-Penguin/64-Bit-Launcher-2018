@@ -56,7 +56,14 @@
     <Reference Include="Bunifu_UI_v1.5.3">
       <HintPath>C:\Users\bekim\Dropbox\Bekim und Alexander\Klassen Sammlungen\Bunifu_UI_v1.5.3.dll</HintPath>
     </Reference>
+    <Reference Include="connection">
+      <HintPath>D:\Schule\Bekim\Skoda\connection\connection\bin\Debug\connection.dll</HintPath>
+    </Reference>
+    <Reference Include="HazardEdit.Tools">
+      <HintPath>..\..\..\..\Dropbox\Bekim und Alexander\Klassen Sammlungen\HazardEdit.Tools.dll</HintPath>
+    </Reference>
     <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="MySql.Data, Version=6.9.9.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
     <Reference Include="platzhalter">
       <HintPath>D:\Schule\Bekim\Skoda\platzhalter\platzhalter\bin\Debug\platzhalter.dll</HintPath>
     </Reference>
@@ -80,19 +87,19 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="LoginSystem.cs">
+    <Compile Include="LoginForm.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="LoginSystem.Designer.cs">
-      <DependentUpon>LoginSystem.cs</DependentUpon>
+    <Compile Include="LoginForm.Designer.cs">
+      <DependentUpon>LoginForm.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="LoginSystem.resx">
-      <DependentUpon>LoginSystem.cs</DependentUpon>
+    <EmbeddedResource Include="LoginForm.resx">
+      <DependentUpon>LoginForm.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>

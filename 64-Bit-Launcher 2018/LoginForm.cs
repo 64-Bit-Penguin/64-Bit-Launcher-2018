@@ -9,14 +9,22 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using platzhalter;
 using System.Runtime.InteropServices;
+using MySql.Data.MySqlClient;
+using HazardEdit;
+using connection;
+using System.Diagnostics;
 
 namespace _64_Bit_Launcher_2018
 {
-    public partial class LoginSystem : Form
+    public partial class LoginForm : Form
     {
-        public LoginSystem()
+        public string user;
+        public string pass;
+        public LoginForm()
         {
+            connection.MeinSQL.Connect();
             InitializeComponent();
+            
         }
 
         #region Panel als Mover benutzen;
@@ -115,6 +123,26 @@ namespace _64_Bit_Launcher_2018
         private void Navigation_panel_MouseMove(object sender, MouseEventArgs e)
         {
             Move_Panel(Handle, e);
+        }
+
+
+        private void LoginBtn_Click(object sender, EventArgs e)
+        {
+
+
+            Form1 Client = new Form1();
+            var Login = this;
+            connection.MeinSQL.anmelden(Username_Login, Password_Login, user, Client, Login);
+            connection.MeinSQL.IsLogin(user, pass);
+        
+            
+        }
+
+
+
+        private void LoginSystem_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
