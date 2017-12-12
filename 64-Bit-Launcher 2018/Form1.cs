@@ -93,12 +93,6 @@ namespace _64_Bit_Launcher_2018
             Move_Panel(Handle, e);
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            LoginForm login = new LoginForm();
-            login.Show();
-
-        }
 
         private void webBrowser1_DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e)
         {
@@ -109,6 +103,16 @@ namespace _64_Bit_Launcher_2018
         {
             webBrowser1.Show();
             WebSite.Stop();
+        }
+
+        private void TheSquareGame_Click(object sender, EventArgs e)
+        {
+            changelog_panel.Visible = false;
+        }
+
+        private void Buy_Btn_Click(object sender, EventArgs e)
+        {
+            Process.Start("https://selly.gg/p/173857e3");
         }
     }
 }

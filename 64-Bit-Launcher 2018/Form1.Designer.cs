@@ -48,8 +48,16 @@
             this.webBrowser1 = new System.Windows.Forms.WebBrowser();
             this.Youtube = new Bunifu.Framework.UI.BunifuImageButton();
             this.Facebook = new Bunifu.Framework.UI.BunifuImageButton();
-            this.button1 = new System.Windows.Forms.Button();
             this.WebSite = new System.Windows.Forms.Timer(this.components);
+            this.TheSquare_Panel = new System.Windows.Forms.Panel();
+            this.changelog_panel = new System.Windows.Forms.Panel();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.Buy_Btn = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.panel6 = new System.Windows.Forms.Panel();
+            this.label4 = new System.Windows.Forms.Label();
+            this.panel1 = new System.Windows.Forms.Panel();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.Navigation_panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.MinimizeBtn)).BeginInit();
@@ -60,6 +68,10 @@
             this.panel5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Youtube)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Facebook)).BeginInit();
+            this.TheSquare_Panel.SuspendLayout();
+            this.changelog_panel.SuspendLayout();
+            this.panel6.SuspendLayout();
+            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // Abrunden
@@ -92,6 +104,7 @@
             this.TheSquareGame.Size = new System.Drawing.Size(187, 25);
             this.TheSquareGame.TabIndex = 3;
             this.TheSquareGame.Text = "The Square Game";
+            this.TheSquareGame.Click += new System.EventHandler(this.TheSquareGame_Click);
             this.TheSquareGame.MouseLeave += new System.EventHandler(this.TheSquareGame_MouseLeave);
             this.TheSquareGame.MouseHover += new System.EventHandler(this.TheSquareGame_MouseHover);
             // 
@@ -150,7 +163,7 @@
             // 
             this.panel2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
             this.panel2.Controls.Add(this.label1);
-            this.panel2.Location = new System.Drawing.Point(17, 65);
+            this.panel2.Location = new System.Drawing.Point(11, 12);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(300, 53);
             this.panel2.TabIndex = 0;
@@ -172,7 +185,7 @@
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
             this.panel3.Controls.Add(this.OurWebsite_LinkLbl);
             this.panel3.Controls.Add(this.label2);
-            this.panel3.Location = new System.Drawing.Point(17, 139);
+            this.panel3.Location = new System.Drawing.Point(11, 86);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(300, 428);
             this.panel3.TabIndex = 1;
@@ -207,7 +220,7 @@
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
             this.panel4.Controls.Add(this.label3);
-            this.panel4.Location = new System.Drawing.Point(342, 65);
+            this.panel4.Location = new System.Drawing.Point(336, 12);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(882, 53);
             this.panel4.TabIndex = 1;
@@ -228,7 +241,7 @@
             // 
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
             this.panel5.Controls.Add(this.webBrowser1);
-            this.panel5.Location = new System.Drawing.Point(342, 139);
+            this.panel5.Location = new System.Drawing.Point(336, 86);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(882, 427);
             this.panel5.TabIndex = 2;
@@ -274,20 +287,130 @@
             this.Facebook.Zoom = 10;
             this.Facebook.Click += new System.EventHandler(this.Facebook_Click);
             // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(358, 597);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(322, 58);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "button1";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
             // WebSite
             // 
-            this.WebSite.Interval = 1000;
+            this.WebSite.Interval = 3000;
             this.WebSite.Tick += new System.EventHandler(this.WebSite_Tick);
+            // 
+            // TheSquare_Panel
+            // 
+            this.TheSquare_Panel.Controls.Add(this.panel7);
+            this.TheSquare_Panel.Controls.Add(this.Buy_Btn);
+            this.TheSquare_Panel.Controls.Add(this.panel6);
+            this.TheSquare_Panel.Controls.Add(this.panel1);
+            this.TheSquare_Panel.Location = new System.Drawing.Point(5, 52);
+            this.TheSquare_Panel.Name = "TheSquare_Panel";
+            this.TheSquare_Panel.Size = new System.Drawing.Size(1236, 592);
+            this.TheSquare_Panel.TabIndex = 4;
+            // 
+            // changelog_panel
+            // 
+            this.changelog_panel.Controls.Add(this.panel5);
+            this.changelog_panel.Controls.Add(this.panel4);
+            this.changelog_panel.Controls.Add(this.panel3);
+            this.changelog_panel.Controls.Add(this.panel2);
+            this.changelog_panel.Location = new System.Drawing.Point(3, 52);
+            this.changelog_panel.Name = "changelog_panel";
+            this.changelog_panel.Size = new System.Drawing.Size(1235, 590);
+            this.changelog_panel.TabIndex = 3;
+            // 
+            // panel7
+            // 
+            this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
+            this.panel7.Location = new System.Drawing.Point(298, 30);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(905, 421);
+            this.panel7.TabIndex = 3;
+            // 
+            // Buy_Btn
+            // 
+            this.Buy_Btn.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(163)))), ((int)(((byte)(9)))));
+            this.Buy_Btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(163)))), ((int)(((byte)(9)))));
+            this.Buy_Btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Buy_Btn.BorderRadius = 0;
+            this.Buy_Btn.ButtonText = "Buy ";
+            this.Buy_Btn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Buy_Btn.DisabledColor = System.Drawing.Color.Gray;
+            this.Buy_Btn.Iconcolor = System.Drawing.Color.Transparent;
+            this.Buy_Btn.Iconimage = null;
+            this.Buy_Btn.Iconimage_right = null;
+            this.Buy_Btn.Iconimage_right_Selected = null;
+            this.Buy_Btn.Iconimage_Selected = null;
+            this.Buy_Btn.IconMarginLeft = 0;
+            this.Buy_Btn.IconMarginRight = 0;
+            this.Buy_Btn.IconRightVisible = true;
+            this.Buy_Btn.IconRightZoom = 0D;
+            this.Buy_Btn.IconVisible = true;
+            this.Buy_Btn.IconZoom = 90D;
+            this.Buy_Btn.IsTab = false;
+            this.Buy_Btn.Location = new System.Drawing.Point(36, 517);
+            this.Buy_Btn.Name = "Buy_Btn";
+            this.Buy_Btn.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(163)))), ((int)(((byte)(9)))));
+            this.Buy_Btn.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(186)))), ((int)(((byte)(31)))));
+            this.Buy_Btn.OnHoverTextColor = System.Drawing.Color.White;
+            this.Buy_Btn.selected = false;
+            this.Buy_Btn.Size = new System.Drawing.Size(226, 49);
+            this.Buy_Btn.TabIndex = 2;
+            this.Buy_Btn.Text = "Buy ";
+            this.Buy_Btn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Buy_Btn.Textcolor = System.Drawing.Color.White;
+            this.Buy_Btn.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Buy_Btn.Click += new System.EventHandler(this.Buy_Btn_Click);
+            // 
+            // panel6
+            // 
+            this.panel6.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
+            this.panel6.Controls.Add(this.label4);
+            this.panel6.Location = new System.Drawing.Point(36, 458);
+            this.panel6.Name = "panel6";
+            this.panel6.Size = new System.Drawing.Size(226, 42);
+            this.panel6.TabIndex = 1;
+            // 
+            // label4
+            // 
+            this.label4.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.Transparent;
+            this.label4.Location = new System.Drawing.Point(0, 0);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(226, 42);
+            this.label4.TabIndex = 0;
+            this.label4.Text = "2.99€";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
+            this.panel1.Controls.Add(this.label6);
+            this.panel1.Controls.Add(this.label5);
+            this.panel1.Location = new System.Drawing.Point(36, 27);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(226, 425);
+            this.panel1.TabIndex = 0;
+            // 
+            // label6
+            // 
+            this.label6.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label6.ForeColor = System.Drawing.Color.White;
+            this.label6.Location = new System.Drawing.Point(0, 36);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(226, 29);
+            this.label6.TabIndex = 1;
+            this.label6.Text = "Here will be Text";
+            this.label6.TextAlign = System.Drawing.ContentAlignment.TopCenter;
+            // 
+            // label5
+            // 
+            this.label5.Dock = System.Windows.Forms.DockStyle.Top;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.White;
+            this.label5.Location = new System.Drawing.Point(0, 0);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(226, 36);
+            this.label5.TabIndex = 0;
+            this.label5.Text = "The Square Game Unity Edition\r\n";
+            this.label5.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
             // Form1
             // 
@@ -295,13 +418,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(30)))), ((int)(((byte)(30)))), ((int)(((byte)(30)))));
             this.ClientSize = new System.Drawing.Size(1245, 712);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.changelog_panel);
+            this.Controls.Add(this.TheSquare_Panel);
             this.Controls.Add(this.Youtube);
             this.Controls.Add(this.Facebook);
-            this.Controls.Add(this.panel5);
-            this.Controls.Add(this.panel4);
-            this.Controls.Add(this.panel3);
-            this.Controls.Add(this.panel2);
             this.Controls.Add(this.Navigation_panel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -320,6 +440,10 @@
             this.panel5.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.Youtube)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Facebook)).EndInit();
+            this.TheSquare_Panel.ResumeLayout(false);
+            this.changelog_panel.ResumeLayout(false);
+            this.panel6.ResumeLayout(false);
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -343,8 +467,16 @@
         private Bunifu.Framework.UI.BunifuImageButton Facebook;
         private Bunifu.Framework.UI.BunifuImageButton Youtube;
         private System.Windows.Forms.WebBrowser webBrowser1;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Timer WebSite;
+        private System.Windows.Forms.Panel TheSquare_Panel;
+        private System.Windows.Forms.Panel changelog_panel;
+        private Bunifu.Framework.UI.BunifuFlatButton Buy_Btn;
+        private System.Windows.Forms.Panel panel6;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.Label label6;
     }
 }
 
