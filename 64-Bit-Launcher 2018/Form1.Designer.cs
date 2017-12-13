@@ -50,7 +50,8 @@
             this.Facebook = new Bunifu.Framework.UI.BunifuImageButton();
             this.WebSite = new System.Windows.Forms.Timer(this.components);
             this.TheSquare_Panel = new System.Windows.Forms.Panel();
-            this.changelog_panel = new System.Windows.Forms.Panel();
+            this.Activate_Btn = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.Serial_Textbox = new Bunifu.Framework.UI.BunifuMetroTextbox();
             this.panel7 = new System.Windows.Forms.Panel();
             this.Buy_Btn = new Bunifu.Framework.UI.BunifuFlatButton();
             this.panel6 = new System.Windows.Forms.Panel();
@@ -58,6 +59,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label6 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
+            this.changelog_panel = new System.Windows.Forms.Panel();
             this.Navigation_panel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.MinimizeBtn)).BeginInit();
@@ -69,9 +71,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.Youtube)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.Facebook)).BeginInit();
             this.TheSquare_Panel.SuspendLayout();
-            this.changelog_panel.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel1.SuspendLayout();
+            this.changelog_panel.SuspendLayout();
             this.SuspendLayout();
             // 
             // Abrunden
@@ -294,6 +296,8 @@
             // 
             // TheSquare_Panel
             // 
+            this.TheSquare_Panel.Controls.Add(this.Activate_Btn);
+            this.TheSquare_Panel.Controls.Add(this.Serial_Textbox);
             this.TheSquare_Panel.Controls.Add(this.panel7);
             this.TheSquare_Panel.Controls.Add(this.Buy_Btn);
             this.TheSquare_Panel.Controls.Add(this.panel6);
@@ -303,16 +307,59 @@
             this.TheSquare_Panel.Size = new System.Drawing.Size(1236, 592);
             this.TheSquare_Panel.TabIndex = 4;
             // 
-            // changelog_panel
+            // Activate_Btn
             // 
-            this.changelog_panel.Controls.Add(this.panel5);
-            this.changelog_panel.Controls.Add(this.panel4);
-            this.changelog_panel.Controls.Add(this.panel3);
-            this.changelog_panel.Controls.Add(this.panel2);
-            this.changelog_panel.Location = new System.Drawing.Point(3, 52);
-            this.changelog_panel.Name = "changelog_panel";
-            this.changelog_panel.Size = new System.Drawing.Size(1235, 590);
-            this.changelog_panel.TabIndex = 3;
+            this.Activate_Btn.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(163)))), ((int)(((byte)(9)))));
+            this.Activate_Btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(163)))), ((int)(((byte)(9)))));
+            this.Activate_Btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.Activate_Btn.BorderRadius = 0;
+            this.Activate_Btn.ButtonText = "Activate";
+            this.Activate_Btn.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.Activate_Btn.DisabledColor = System.Drawing.Color.Gray;
+            this.Activate_Btn.Iconcolor = System.Drawing.Color.Transparent;
+            this.Activate_Btn.Iconimage = null;
+            this.Activate_Btn.Iconimage_right = null;
+            this.Activate_Btn.Iconimage_right_Selected = null;
+            this.Activate_Btn.Iconimage_Selected = null;
+            this.Activate_Btn.IconMarginLeft = 0;
+            this.Activate_Btn.IconMarginRight = 0;
+            this.Activate_Btn.IconRightVisible = true;
+            this.Activate_Btn.IconRightZoom = 0D;
+            this.Activate_Btn.IconVisible = true;
+            this.Activate_Btn.IconZoom = 90D;
+            this.Activate_Btn.IsTab = false;
+            this.Activate_Btn.Location = new System.Drawing.Point(713, 517);
+            this.Activate_Btn.Name = "Activate_Btn";
+            this.Activate_Btn.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(163)))), ((int)(((byte)(9)))));
+            this.Activate_Btn.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(186)))), ((int)(((byte)(31)))));
+            this.Activate_Btn.OnHoverTextColor = System.Drawing.Color.White;
+            this.Activate_Btn.selected = false;
+            this.Activate_Btn.Size = new System.Drawing.Size(226, 49);
+            this.Activate_Btn.TabIndex = 5;
+            this.Activate_Btn.Text = "Activate";
+            this.Activate_Btn.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Activate_Btn.Textcolor = System.Drawing.Color.White;
+            this.Activate_Btn.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            // 
+            // Serial_Textbox
+            // 
+            this.Serial_Textbox.BorderColorFocused = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(199)))), ((int)(((byte)(199)))));
+            this.Serial_Textbox.BorderColorIdle = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.Serial_Textbox.BorderColorMouseHover = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.Serial_Textbox.BorderThickness = 3;
+            this.Serial_Textbox.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.Serial_Textbox.Font = new System.Drawing.Font("Century Gothic", 9.75F);
+            this.Serial_Textbox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+            this.Serial_Textbox.isPassword = false;
+            this.Serial_Textbox.Location = new System.Drawing.Point(313, 517);
+            this.Serial_Textbox.Margin = new System.Windows.Forms.Padding(4);
+            this.Serial_Textbox.Name = "Serial_Textbox";
+            this.Serial_Textbox.Size = new System.Drawing.Size(370, 49);
+            this.Serial_Textbox.TabIndex = 4;
+            this.Serial_Textbox.Text = "Serial Key";
+            this.Serial_Textbox.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+            this.Serial_Textbox.Enter += new System.EventHandler(this.Serial_Textbox_Enter);
+            this.Serial_Textbox.Leave += new System.EventHandler(this.Serial_Textbox_Leave);
             // 
             // panel7
             // 
@@ -412,6 +459,17 @@
             this.label5.Text = "The Square Game Unity Edition\r\n";
             this.label5.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
+            // changelog_panel
+            // 
+            this.changelog_panel.Controls.Add(this.panel5);
+            this.changelog_panel.Controls.Add(this.panel4);
+            this.changelog_panel.Controls.Add(this.panel3);
+            this.changelog_panel.Controls.Add(this.panel2);
+            this.changelog_panel.Location = new System.Drawing.Point(6, 657);
+            this.changelog_panel.Name = "changelog_panel";
+            this.changelog_panel.Size = new System.Drawing.Size(1235, 590);
+            this.changelog_panel.TabIndex = 3;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -441,9 +499,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.Youtube)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.Facebook)).EndInit();
             this.TheSquare_Panel.ResumeLayout(false);
-            this.changelog_panel.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
             this.panel1.ResumeLayout(false);
+            this.changelog_panel.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -477,6 +535,8 @@
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Label label6;
+        private Bunifu.Framework.UI.BunifuFlatButton Activate_Btn;
+        private Bunifu.Framework.UI.BunifuMetroTextbox Serial_Textbox;
     }
 }
 

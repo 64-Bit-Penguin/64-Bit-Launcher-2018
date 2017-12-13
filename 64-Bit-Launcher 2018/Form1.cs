@@ -39,11 +39,23 @@ namespace _64_Bit_Launcher_2018
         //"Move_Panel(Handle, e);"   in   "panel1_MouseMove" schreiben "using System.Runtime.InteropServices;"
         #endregion
 
-        private void CloseBtn_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
 
+        #region platzhalter
+                private void Serial_Textbox_Enter(object sender, EventArgs e)
+                {
+                    platzhalter.platzhalter_enter.enterMetro(Serial_Textbox);
+                }
+
+                private void Serial_Textbox_Leave(object sender, EventArgs e)
+                {
+                    platzhalter.platzhalter_enter.serial_leave(Serial_Textbox);
+                }
+
+                private void CloseBtn_Click(object sender, EventArgs e)
+                {
+                    Application.Exit();
+                }
+        #endregion  
 
         private void MinimizeBtn_Click(object sender, EventArgs e)
         {
@@ -114,5 +126,7 @@ namespace _64_Bit_Launcher_2018
         {
             Process.Start("https://selly.gg/p/173857e3");
         }
+
+
     }
 }
