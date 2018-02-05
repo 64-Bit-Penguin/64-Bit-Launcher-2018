@@ -29,8 +29,13 @@
         private void InitializeComponent()
         {
             this.Navigation_panel = new System.Windows.Forms.Panel();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.MinimizeBtn = new Bunifu.Framework.UI.BunifuImageButton();
+            this.CloseBtn = new Bunifu.Framework.UI.BunifuImageButton();
             this.panel1 = new System.Windows.Forms.Panel();
             this.LoginBtn = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.UserPicture = new System.Windows.Forms.PictureBox();
+            this.PasswordPicture = new System.Windows.Forms.PictureBox();
             this.Password_Login = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.Username_Login = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.label1 = new System.Windows.Forms.Label();
@@ -41,19 +46,14 @@
             this.RegisterBtn = new Bunifu.Framework.UI.BunifuFlatButton();
             this.Username_Regi = new Bunifu.Framework.UI.BunifuMaterialTextbox();
             this.label2 = new System.Windows.Forms.Label();
-            this.UserPicture = new System.Windows.Forms.PictureBox();
-            this.PasswordPicture = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.MinimizeBtn = new Bunifu.Framework.UI.BunifuImageButton();
-            this.CloseBtn = new Bunifu.Framework.UI.BunifuImageButton();
             this.Navigation_panel.SuspendLayout();
-            this.panel1.SuspendLayout();
-            this.panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.UserPicture)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PasswordPicture)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.MinimizeBtn)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.CloseBtn)).BeginInit();
+            this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.UserPicture)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PasswordPicture)).BeginInit();
+            this.panel2.SuspendLayout();
             this.SuspendLayout();
             // 
             // Navigation_panel
@@ -68,6 +68,44 @@
             this.Navigation_panel.Size = new System.Drawing.Size(1245, 43);
             this.Navigation_panel.TabIndex = 1;
             this.Navigation_panel.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Navigation_panel_MouseMove);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::_64_Bit_Launcher_2018.Properties.Resources.InProgrammIcon;
+            this.pictureBox1.Location = new System.Drawing.Point(6, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(47, 41);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 2;
+            this.pictureBox1.TabStop = false;
+            // 
+            // MinimizeBtn
+            // 
+            this.MinimizeBtn.BackColor = System.Drawing.Color.Transparent;
+            this.MinimizeBtn.Image = global::_64_Bit_Launcher_2018.Properties.Resources.minimize;
+            this.MinimizeBtn.ImageActive = null;
+            this.MinimizeBtn.Location = new System.Drawing.Point(1187, 5);
+            this.MinimizeBtn.Name = "MinimizeBtn";
+            this.MinimizeBtn.Size = new System.Drawing.Size(22, 23);
+            this.MinimizeBtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.MinimizeBtn.TabIndex = 1;
+            this.MinimizeBtn.TabStop = false;
+            this.MinimizeBtn.Zoom = 10;
+            this.MinimizeBtn.Click += new System.EventHandler(this.MinimizeBtn_Click);
+            // 
+            // CloseBtn
+            // 
+            this.CloseBtn.BackColor = System.Drawing.Color.Transparent;
+            this.CloseBtn.Image = global::_64_Bit_Launcher_2018.Properties.Resources.close;
+            this.CloseBtn.ImageActive = null;
+            this.CloseBtn.Location = new System.Drawing.Point(1215, 3);
+            this.CloseBtn.Name = "CloseBtn";
+            this.CloseBtn.Size = new System.Drawing.Size(27, 25);
+            this.CloseBtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.CloseBtn.TabIndex = 1;
+            this.CloseBtn.TabStop = false;
+            this.CloseBtn.Zoom = 10;
+            this.CloseBtn.Click += new System.EventHandler(this.CloseBtn_Click);
             // 
             // panel1
             // 
@@ -119,6 +157,26 @@
             this.LoginBtn.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LoginBtn.Click += new System.EventHandler(this.LoginBtn_Click);
             // 
+            // UserPicture
+            // 
+            this.UserPicture.Image = global::_64_Bit_Launcher_2018.Properties.Resources.User1;
+            this.UserPicture.Location = new System.Drawing.Point(23, 195);
+            this.UserPicture.Name = "UserPicture";
+            this.UserPicture.Size = new System.Drawing.Size(34, 35);
+            this.UserPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.UserPicture.TabIndex = 5;
+            this.UserPicture.TabStop = false;
+            // 
+            // PasswordPicture
+            // 
+            this.PasswordPicture.Image = global::_64_Bit_Launcher_2018.Properties.Resources.password1;
+            this.PasswordPicture.Location = new System.Drawing.Point(23, 255);
+            this.PasswordPicture.Name = "PasswordPicture";
+            this.PasswordPicture.Size = new System.Drawing.Size(34, 35);
+            this.PasswordPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.PasswordPicture.TabIndex = 4;
+            this.PasswordPicture.TabStop = false;
+            // 
             // Password_Login
             // 
             this.Password_Login.Cursor = System.Windows.Forms.Cursors.IBeam;
@@ -126,7 +184,7 @@
             this.Password_Login.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(195)))), ((int)(((byte)(195)))));
             this.Password_Login.HintForeColor = System.Drawing.Color.Empty;
             this.Password_Login.HintText = "";
-            this.Password_Login.isPassword = true;
+            this.Password_Login.isPassword = false;
             this.Password_Login.LineFocusedColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(199)))), ((int)(((byte)(199)))));
             this.Password_Login.LineIdleColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
             this.Password_Login.LineMouseHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(199)))), ((int)(((byte)(199)))), ((int)(((byte)(199)))));
@@ -325,64 +383,6 @@
             this.label2.Text = "Register";
             this.label2.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             // 
-            // UserPicture
-            // 
-            this.UserPicture.Image = global::_64_Bit_Launcher_2018.Properties.Resources.User1;
-            this.UserPicture.Location = new System.Drawing.Point(23, 195);
-            this.UserPicture.Name = "UserPicture";
-            this.UserPicture.Size = new System.Drawing.Size(34, 35);
-            this.UserPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.UserPicture.TabIndex = 5;
-            this.UserPicture.TabStop = false;
-            // 
-            // PasswordPicture
-            // 
-            this.PasswordPicture.Image = global::_64_Bit_Launcher_2018.Properties.Resources.password1;
-            this.PasswordPicture.Location = new System.Drawing.Point(23, 255);
-            this.PasswordPicture.Name = "PasswordPicture";
-            this.PasswordPicture.Size = new System.Drawing.Size(34, 35);
-            this.PasswordPicture.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.PasswordPicture.TabIndex = 4;
-            this.PasswordPicture.TabStop = false;
-            // 
-            // pictureBox1
-            // 
-            this.pictureBox1.Image = global::_64_Bit_Launcher_2018.Properties.Resources.InProgrammIcon;
-            this.pictureBox1.Location = new System.Drawing.Point(6, 0);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(47, 41);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 2;
-            this.pictureBox1.TabStop = false;
-            // 
-            // MinimizeBtn
-            // 
-            this.MinimizeBtn.BackColor = System.Drawing.Color.Transparent;
-            this.MinimizeBtn.Image = global::_64_Bit_Launcher_2018.Properties.Resources.minimize;
-            this.MinimizeBtn.ImageActive = null;
-            this.MinimizeBtn.Location = new System.Drawing.Point(1187, 5);
-            this.MinimizeBtn.Name = "MinimizeBtn";
-            this.MinimizeBtn.Size = new System.Drawing.Size(22, 23);
-            this.MinimizeBtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.MinimizeBtn.TabIndex = 1;
-            this.MinimizeBtn.TabStop = false;
-            this.MinimizeBtn.Zoom = 10;
-            this.MinimizeBtn.Click += new System.EventHandler(this.MinimizeBtn_Click);
-            // 
-            // CloseBtn
-            // 
-            this.CloseBtn.BackColor = System.Drawing.Color.Transparent;
-            this.CloseBtn.Image = global::_64_Bit_Launcher_2018.Properties.Resources.close;
-            this.CloseBtn.ImageActive = null;
-            this.CloseBtn.Location = new System.Drawing.Point(1215, 3);
-            this.CloseBtn.Name = "CloseBtn";
-            this.CloseBtn.Size = new System.Drawing.Size(27, 25);
-            this.CloseBtn.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.CloseBtn.TabIndex = 1;
-            this.CloseBtn.TabStop = false;
-            this.CloseBtn.Zoom = 10;
-            this.CloseBtn.Click += new System.EventHandler(this.CloseBtn_Click);
-            // 
             // LoginForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -397,13 +397,13 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "LoginSystem";
             this.Navigation_panel.ResumeLayout(false);
-            this.panel1.ResumeLayout(false);
-            this.panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.UserPicture)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.PasswordPicture)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.MinimizeBtn)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.CloseBtn)).EndInit();
+            this.panel1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.UserPicture)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.PasswordPicture)).EndInit();
+            this.panel2.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

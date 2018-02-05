@@ -32,7 +32,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.Abrunden = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.Navigation_panel = new System.Windows.Forms.Panel();
-            this.TheSquareGame = new System.Windows.Forms.Label();
+            this.Game_List = new System.Windows.Forms.Label();
             this.TheSquareGame_Strich = new Bunifu.Framework.UI.BunifuSeparator();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.MinimizeBtn = new Bunifu.Framework.UI.BunifuImageButton();
@@ -84,7 +84,7 @@
             // Navigation_panel
             // 
             this.Navigation_panel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(85)))), ((int)(((byte)(121)))));
-            this.Navigation_panel.Controls.Add(this.TheSquareGame);
+            this.Navigation_panel.Controls.Add(this.Game_List);
             this.Navigation_panel.Controls.Add(this.TheSquareGame_Strich);
             this.Navigation_panel.Controls.Add(this.pictureBox1);
             this.Navigation_panel.Controls.Add(this.MinimizeBtn);
@@ -96,24 +96,24 @@
             this.Navigation_panel.TabIndex = 0;
             this.Navigation_panel.MouseMove += new System.Windows.Forms.MouseEventHandler(this.Navigation_panel_MouseMove);
             // 
-            // TheSquareGame
+            // Game_List
             // 
-            this.TheSquareGame.AutoSize = true;
-            this.TheSquareGame.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.TheSquareGame.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(136)))), ((int)(((byte)(136)))));
-            this.TheSquareGame.Location = new System.Drawing.Point(90, 8);
-            this.TheSquareGame.Name = "TheSquareGame";
-            this.TheSquareGame.Size = new System.Drawing.Size(187, 25);
-            this.TheSquareGame.TabIndex = 3;
-            this.TheSquareGame.Text = "The Square Game";
-            this.TheSquareGame.Click += new System.EventHandler(this.TheSquareGame_Click);
-            this.TheSquareGame.MouseLeave += new System.EventHandler(this.TheSquareGame_MouseLeave);
-            this.TheSquareGame.MouseHover += new System.EventHandler(this.TheSquareGame_MouseHover);
+            this.Game_List.AutoSize = true;
+            this.Game_List.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Game_List.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(195)))), ((int)(((byte)(195)))));
+            this.Game_List.Location = new System.Drawing.Point(90, 8);
+            this.Game_List.Name = "Game_List";
+            this.Game_List.Size = new System.Drawing.Size(187, 25);
+            this.Game_List.TabIndex = 3;
+            this.Game_List.Text = "The Square Game";
+            this.Game_List.Click += new System.EventHandler(this.TheSquareGame_Click);
+            this.Game_List.MouseLeave += new System.EventHandler(this.TheSquareGame_MouseLeave);
+            this.Game_List.MouseHover += new System.EventHandler(this.TheSquareGame_MouseHover);
             // 
             // TheSquareGame_Strich
             // 
             this.TheSquareGame_Strich.BackColor = System.Drawing.Color.Transparent;
-            this.TheSquareGame_Strich.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(105)))), ((int)(((byte)(105)))), ((int)(((byte)(105)))));
+            this.TheSquareGame_Strich.LineColor = System.Drawing.Color.FromArgb(((int)(((byte)(195)))), ((int)(((byte)(195)))), ((int)(((byte)(195)))));
             this.TheSquareGame_Strich.LineThickness = 3;
             this.TheSquareGame_Strich.Location = new System.Drawing.Point(93, 30);
             this.TheSquareGame_Strich.Name = "TheSquareGame_Strich";
@@ -309,7 +309,7 @@
             // 
             // Activate_Btn
             // 
-            this.Activate_Btn.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(163)))), ((int)(((byte)(9)))));
+            this.Activate_Btn.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(85)))), ((int)(((byte)(121)))));
             this.Activate_Btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(85)))), ((int)(((byte)(121)))));
             this.Activate_Btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Activate_Btn.BorderRadius = 0;
@@ -330,8 +330,8 @@
             this.Activate_Btn.IsTab = false;
             this.Activate_Btn.Location = new System.Drawing.Point(713, 517);
             this.Activate_Btn.Name = "Activate_Btn";
-            this.Activate_Btn.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(163)))), ((int)(((byte)(9)))));
-            this.Activate_Btn.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(186)))), ((int)(((byte)(31)))));
+            this.Activate_Btn.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(85)))), ((int)(((byte)(121)))));
+            this.Activate_Btn.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(124)))), ((int)(((byte)(180)))));
             this.Activate_Btn.OnHoverTextColor = System.Drawing.Color.White;
             this.Activate_Btn.selected = false;
             this.Activate_Btn.Size = new System.Drawing.Size(226, 49);
@@ -371,7 +371,7 @@
             // 
             // Buy_Btn
             // 
-            this.Buy_Btn.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(163)))), ((int)(((byte)(9)))));
+            this.Buy_Btn.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(85)))), ((int)(((byte)(121)))));
             this.Buy_Btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(85)))), ((int)(((byte)(121)))));
             this.Buy_Btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Buy_Btn.BorderRadius = 0;
@@ -392,8 +392,8 @@
             this.Buy_Btn.IsTab = false;
             this.Buy_Btn.Location = new System.Drawing.Point(36, 517);
             this.Buy_Btn.Name = "Buy_Btn";
-            this.Buy_Btn.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(163)))), ((int)(((byte)(9)))));
-            this.Buy_Btn.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(186)))), ((int)(((byte)(31)))));
+            this.Buy_Btn.Normalcolor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(85)))), ((int)(((byte)(121)))));
+            this.Buy_Btn.OnHovercolor = System.Drawing.Color.FromArgb(((int)(((byte)(22)))), ((int)(((byte)(124)))), ((int)(((byte)(180)))));
             this.Buy_Btn.OnHoverTextColor = System.Drawing.Color.White;
             this.Buy_Btn.selected = false;
             this.Buy_Btn.Size = new System.Drawing.Size(226, 49);
@@ -512,7 +512,7 @@
         private System.Windows.Forms.PictureBox pictureBox1;
         private Bunifu.Framework.UI.BunifuImageButton MinimizeBtn;
         private Bunifu.Framework.UI.BunifuImageButton CloseBtn;
-        private System.Windows.Forms.Label TheSquareGame;
+        private System.Windows.Forms.Label Game_List;
         private Bunifu.Framework.UI.BunifuSeparator TheSquareGame_Strich;
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Panel panel3;

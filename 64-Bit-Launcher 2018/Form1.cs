@@ -64,17 +64,17 @@ namespace _64_Bit_Launcher_2018
 
         private void TheSquareGame_MouseHover(object sender, EventArgs e)
         {
-            string hex = "#C7C7C7";
+            string hex = "#DDDDDD";
             Color color = System.Drawing.ColorTranslator.FromHtml(hex);
-            TheSquareGame.ForeColor = color;
+            Game_List.ForeColor = color;
             TheSquareGame_Strich.Visible = true;
         }
 
         private void TheSquareGame_MouseLeave(object sender, EventArgs e)
         {
-            string hex = "#888888";
+            string hex = "#C3C3C3";
             Color color = System.Drawing.ColorTranslator.FromHtml(hex);
-            TheSquareGame.ForeColor = color;
+            Game_List.ForeColor = color;
             TheSquareGame_Strich.Visible = false;
         }
 
