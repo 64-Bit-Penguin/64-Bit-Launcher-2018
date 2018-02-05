@@ -83,7 +83,7 @@
             // 
             // Navigation_panel
             // 
-            this.Navigation_panel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(34)))), ((int)(((byte)(34)))), ((int)(((byte)(34)))));
+            this.Navigation_panel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(85)))), ((int)(((byte)(121)))));
             this.Navigation_panel.Controls.Add(this.TheSquareGame);
             this.Navigation_panel.Controls.Add(this.TheSquareGame_Strich);
             this.Navigation_panel.Controls.Add(this.pictureBox1);
@@ -310,7 +310,7 @@
             // Activate_Btn
             // 
             this.Activate_Btn.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(163)))), ((int)(((byte)(9)))));
-            this.Activate_Btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(163)))), ((int)(((byte)(9)))));
+            this.Activate_Btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(85)))), ((int)(((byte)(121)))));
             this.Activate_Btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Activate_Btn.BorderRadius = 0;
             this.Activate_Btn.ButtonText = "Activate";
@@ -372,7 +372,7 @@
             // Buy_Btn
             // 
             this.Buy_Btn.Activecolor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(163)))), ((int)(((byte)(9)))));
-            this.Buy_Btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(222)))), ((int)(((byte)(163)))), ((int)(((byte)(9)))));
+            this.Buy_Btn.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(15)))), ((int)(((byte)(85)))), ((int)(((byte)(121)))));
             this.Buy_Btn.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Buy_Btn.BorderRadius = 0;
             this.Buy_Btn.ButtonText = "Buy ";
@@ -465,7 +465,7 @@
             this.changelog_panel.Controls.Add(this.panel4);
             this.changelog_panel.Controls.Add(this.panel3);
             this.changelog_panel.Controls.Add(this.panel2);
-            this.changelog_panel.Location = new System.Drawing.Point(6, 657);
+            this.changelog_panel.Location = new System.Drawing.Point(5, 650);
             this.changelog_panel.Name = "changelog_panel";
             this.changelog_panel.Size = new System.Drawing.Size(1235, 590);
             this.changelog_panel.TabIndex = 3;
